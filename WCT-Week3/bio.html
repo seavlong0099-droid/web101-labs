@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bio Page</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>My Personal Website</h1>
+
+        <!-- Navigation -->
+        <nav>
+            <a href="home.html">About</a> |
+            <a href="project.html">Projects</a> |
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+
+            <!-- Image -->
+            <img src="image/myphoto.jpg"
+                 alt="Photo of me"
+                 width="300">
+
+            <p>
+                Hello! My name is Seavlong.
+                I enjoy coding, gaming, and learning web development.
+            </p>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="project">
+            <h2>My Links</h2>
+
+            <ul>
+                <li>
+                    <a href="https://github.com/" target="_blank">
+                        My GitHub
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.youtube.com/" target="_blank">
+                        My Favorite YouTube
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.facebook.com/" target="_blank">
+                        My Facebook
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Form</h2>
+
+            <form>
+
+                <!-- Name -->
+                <label for="name">Full Name:</label><br>
+                <input type="text"
+                       id="name"
+                       name="name"
+                       required
+                       minlength="3">
+                <br><br>
+
+                <!-- Email -->
+                <label for="email">Email:</label><br>
+                <input type="email"
+                       id="email"
+                       name="email"
+                       required>
+                <br><br>
+
+                <!-- Phone -->
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel"
+                       id="phone"
+                       name="phone"
+                       pattern="[0-9]{8,12}"
+                       required>
+                <br><br>
+
+                <!-- Topic -->
+                <label for="topic">Topic:</label><br>
+                <select id="topic" name="topic" required>
+                    <option value="">Choose a topic</option>
+                    <option value="school">School</option>
+                    <option value="project">Project</option>
+                    <option value="other">Other</option>
+                </select>
+                <br><br>
+
+                <!-- Message -->
+                <label for="message">Message:</label><br>
+                <textarea id="message"
+                          name="message"
+                          rows="5"
+                          cols="30"
+                          required
+                          minlength="10"></textarea>
+                <br><br>
+
+                <!-- Submit -->
+                <button type="submit">Send</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 My Website</p>
+    </footer>
+
+</body>
+
+</html>
