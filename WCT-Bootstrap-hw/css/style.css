@@ -1,0 +1,41 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightblue;
+}
+
+.navbar{
+    padding:15px 0;
+}
+
+.hero{
+    min-height:80vh;
+}
+
+.btn{
+    border-radius:30px;
+    padding:10px 25px;
+}
+
+.btn-warning{
+    background:#ff914d;
+    border:none;
+    color:white;
+}
+
+.btn-warning:hover{
+    background:#ff7b2c;
+}
+
+.card{
+    border:none;
+    border-radius:15px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+footer input{
+    margin-top:10px;
+}
