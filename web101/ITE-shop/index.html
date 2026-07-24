@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ITE Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="navbar">
+    <h2>ITE Shop</h2>
+    <h3>Cart (<span id="count">0</span>)</h3>
+</div>
+
+<div class="container">
+
+    <div class="products">
+
+        <div class="card">
+            <h2>Keyboard</h2>
+            <p>$25.50</p>
+            <button onclick="addItem('Keyboard',25.50)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <h2>Mouse</h2>
+            <p>$12.00</p>
+            <button onclick="addItem('Mouse',12)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <h2>Monitor</h2>
+            <p>$149.99</p>
+            <button onclick="addItem('Monitor',149.99)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <h2>USB Hub</h2>
+            <p>$18.75</p>
+            <button onclick="addItem('USB Hub',18.75)">Add to Cart</button>
+        </div>
+
+    </div>
+
+    <div class="cart">
+        <h2>Your Cart</h2>
+
+        <ul id="cartList"></ul>
+
+        <h3>Total: $<span id="total">0.00</span></h3>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
